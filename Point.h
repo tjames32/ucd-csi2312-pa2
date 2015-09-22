@@ -5,30 +5,33 @@
 #ifndef CODE_POINT_H
 #define CODE_POINT_H
 
-#endif //CODE_POINT_H
+namespace;
 
 class Point
 {
-private:
-    double x_coord;
-    double y_coord;
-    double z_coord;
+    private:
+        double dim;
 
-public:
-    Point();
+    public:
 
-    Point(double x, double y, double z);
+        //Point();
 
-    ~Point();
+        double [] coordinates;
+        int dimensions;
+    
+        Point(int dim, double[] array)
+            {
+                 coordinates = new [dim];
+        
+                for(int i = 0; i < dim[]; i++)
+                coordinates[i] = array[i];
+            }
 
-    void setX(double newX);
-    void setY(double newY);
-    void setZ(double newZ);
+    double distanceTo(Point* nextPoint)
+        {
+            int dim = min(nextPoint->coordinates[i] - coordinates[i]);
+        }
 
-    double getX();
-    double getY();
-    double getZ();
-
-    double distanceTo(Point &nextPoint);
+    
 
 };
